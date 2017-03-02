@@ -10,3 +10,4 @@ export RadioField from './RadioField';
 export Table from './Table';
 export TabWindow from './TabWindow';
 export TextareaField from './TextareaField';
+export Header from './Header';
