@@ -1,5 +1,7 @@
 // Relative font and image file paths
 @import './stylesheets/caseflow_main.scss';
+@import "../node_modules/codemirror/lib/codemirror.css";
+@import "../node_modules/codemirror/theme/monokai.css";
 
 .App {
   text-align: center;
