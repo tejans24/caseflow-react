@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { TextareaField, Button, Modal } from 'caseflow_react';
-import Accordian from './Accordian';
+import Accordion from './Accordion';
 import CodeMirror from 'react-codemirror';
-import ModalCode from './code';
+import { ModalCode } from './code';
 require('codemirror/mode/javascript/javascript');
 import './custom.css'
 
@@ -69,7 +69,7 @@ class ModalExample extends Component {
       </Modal>
     }
 
-    <Accordian
+    <Accordion
       title="Code (React/ES6)"
       content={<CodeMirror value={ModalCode} options={options} />}
     />

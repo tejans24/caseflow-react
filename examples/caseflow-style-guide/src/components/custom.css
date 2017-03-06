@@ -3,4 +3,5 @@
   font-size: 1.4rem;
 }
 
-.CodeMirror { height: 100%; }
+.CodeMirror { height: 100%; width: 112%; }
+.ReactCodeMirror { width: 112%; }

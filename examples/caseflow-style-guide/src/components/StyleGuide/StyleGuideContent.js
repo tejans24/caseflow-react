@@ -8,7 +8,7 @@ const StyleGuideContent = (props) => {
     <div className="cf-push-left cf-sg-nav">
         <ul className="usa-sidenav-list">
           <li>
-            <a href="/styleguide#">Introduction</a>
+            <a href="#">Introduction</a>
           </li>
           <li>
             <a href="#modals">Modals</a>
