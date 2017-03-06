@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { TextareaField, Button, Modal, Alert, DropDown, Header, Footer } from 'caseflow_react';
+import { TextareaField, Button, Modal, Alert, DropDown, Header, Footer } from 'caseflow-react';
 require('codemirror/lib/codemirror.css');
 
 import logo from './logo.svg';

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Button } from 'caseflow_react';
+import { Button } from 'caseflow-react';
 
 const ButtonExample = (props) => {
   return(

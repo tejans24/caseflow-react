@@ -1,18 +1,38 @@
 import React, { PropTypes } from 'react';
-import { Alert } from 'caseflow_react';
+import { Alert } from 'caseflow-react';
+import Accordion from './Accordion';
+import CodeMirror from 'react-codemirror';
+import { AlertCode } from './code';
 
 const AlertExample = (props) => {
+  let options = {
+    theme: 'monokai',
+    mode: {name: "javascript", jsx: true},
+    readOnly: true,
+    //lineNumbers: true
+  };
+
   return(
     <div>
       <h2 id="alerts">Alerts</h2>
-      <p>Modals are 490 pixels in width with 30px padding around the border and
-        contain the following: a title, explanation text, a divider,
-        and action buttons. There are modal-specific classes that must be included
-        in your modal (see below code snippets).</p>
-      <Alert type="error" title="error" message="This is an error"/>
-      <Alert type="warning" title="warning" message="This is a warning"/>
-      <Alert type="info" title="info" message="This is some info"/>
-      <Alert type="success" title="success" message="It's successful!"/>
+      <Alert type="success" title="Success status"
+        message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."/>
+      <Alert type="warning" title="Warning status"
+        message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."/>
+      <Alert type="error" title="Error status"
+        message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."/>
+      <Alert type="info" title="Informative status"
+        message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."/>
+      <Alert type="info" title="Informative status"
+        message="Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu-
+        santium doloremque laudantium, totam zrem. Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt."/>
+      <div className="cf-help-divider"></div>
+      <Accordion
+        title="Code (React/ES6)"
+        content={<CodeMirror value={AlertCode} options={options} />}
+      />
     </div>
   )
 }

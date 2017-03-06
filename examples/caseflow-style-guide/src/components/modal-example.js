@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TextareaField, Button, Modal } from 'caseflow_react';
+import { TextareaField, Button, Modal } from 'caseflow-react';
 import Accordion from './Accordion';
 import CodeMirror from 'react-codemirror';
 import { ModalCode } from './code';
