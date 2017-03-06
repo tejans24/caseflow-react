@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Alert } from 'caseflow-react';
-import Accordion from './Accordion';
+import { Alert, Accordion } from 'caseflow-react';
 import CodeMirror from 'react-codemirror';
 import { AlertCode } from './code';
 

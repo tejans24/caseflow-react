@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { TextareaField, Button, Modal } from 'caseflow-react';
-import Accordion from './Accordion';
+import { TextareaField, Button, Modal, Accordion } from 'caseflow-react';
 import CodeMirror from 'react-codemirror';
 import { ModalCode } from './code';
 require('codemirror/mode/javascript/javascript');
