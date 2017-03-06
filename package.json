@@ -1,5 +1,5 @@
 {
-  "name": "caseflow_react",
+  "name": "caseflow-react",
   "version": "1.0.0",
   "description": "This is a package with react components",
   "main": "dist/index.js",
