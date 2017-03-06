@@ -8,7 +8,6 @@ RUN npm install -g http-server
 
 # Install app dependencies
 COPY package.json /src/app/
-COPY ../../caseflow_react /src/app/
 
 RUN npm install
 
