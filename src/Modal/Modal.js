@@ -3,6 +3,7 @@ import { closeSymbolHtml } from '../RenderFunctions.js';
 import Button from '../Button';
 
 export default class Modal extends React.Component {
+
   constructor(props) {
     super(props);
     this.buttonIdPrefix = `${this.props.title.replace(/\s/g, '-')}-button-id-`;

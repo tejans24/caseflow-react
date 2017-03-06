@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
-import TestPage from '../../TestPage';
+import TestPage from '../TestPage';
 
 describe('DateSelector', () => {
   describe('.dateFill', () => {

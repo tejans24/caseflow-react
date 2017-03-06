@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
 import Table from './Table';
-import { createTask } from '../../factory';
+import { createTask } from '../util/factory';
 
 describe('Table', () => {
   let buildRowValues;
