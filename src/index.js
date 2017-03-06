@@ -12,3 +12,4 @@ export TabWindow from './TabWindow';
 export TextareaField from './TextareaField';
 export Header from './Header';
 export Footer from './Footer';
+export Accordion from './Accordion';
