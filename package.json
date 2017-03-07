@@ -4,7 +4,7 @@
   "description": "This is a package with react components",
   "main": "dist/index.js",
   "scripts": {
-    "build-css": "node-sass src/ -o dist/",
+    "build-css": "node-sass src/ -o dist/ --output-style compressed",
     "test": "mocha --compilers js:babel-core/register $(find src -name '*.test.js')",
     "build": "npm run copy-assets && npm run build-css && babel src --out-dir dist",
     "copy-assets": "babel-node build/index.js",
@@ -27,7 +27,6 @@
     "react-addons-test-utils": "^15.4.2"
   },
   "dependencies": {
-    "copy-dir": "^0.3.0",
     "ncp": "^2.0.0",
     "node-pre-gyp": "^0.6.33",
     "pdf-annotate.js": "^1.0.0",
