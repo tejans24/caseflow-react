@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Alert, Accordion } from 'caseflow-react';
 import CodeMirror from 'react-codemirror';
-import { AlertCode } from './code';
+import { AlertCode } from '../data/code';
 
 const AlertExample = (props) => {
   let options = {
