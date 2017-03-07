@@ -4,8 +4,10 @@
   "description": "This is a package with react components",
   "main": "dist/index.js",
   "scripts": {
+    "build-css": "node-sass src/ -o dist/",
     "test": "mocha --compilers js:babel-core/register $(find src -name '*.test.js')",
-    "build": "babel src --out-dir dist",
+    "build": "npm run copy-assets && npm run build-css && babel src --out-dir dist",
+    "copy-assets": "babel-node build/index.js",
     "prepublish": "npm run build"
   },
   "author": "",
@@ -21,13 +23,17 @@
     "eslint-plugin-mocha": "^4.8.0",
     "jsdom": "^9.11.0",
     "mocha": "^3.2.0",
+    "node-sass": "^4.5.0",
     "react-addons-test-utils": "^15.4.2"
   },
   "dependencies": {
+    "copy-dir": "^0.3.0",
+    "ncp": "^2.0.0",
     "node-pre-gyp": "^0.6.33",
     "pdf-annotate.js": "^1.0.0",
     "pdfjs-dist": "^1.7.337",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "uswds": "^1.0.0"
   }
 }
