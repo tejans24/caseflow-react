@@ -1,5 +1,5 @@
 const ModalCode = `
-  import { TextareaField, Modal } from 'caseflow_react';
+  import { TextareaField, Modal } from 'caseflow-react';
 
   <Modal
     buttons = {[
@@ -30,7 +30,7 @@ const ModalCode = `
 
 const AlertCode = `
   import React, { PropTypes } from 'react';
-  import { Alert } from 'caseflow_react';
+  import { Alert } from 'caseflow-react';
 
   const AlertExample = (props) => {
     return(
