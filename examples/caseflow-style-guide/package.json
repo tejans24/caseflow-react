@@ -12,13 +12,15 @@
   },
   "dependencies": {
     "bourbon": "^4.3.3",
+    "install": "^0.8.7",
+    "npm-git": "^0.1.29",
     "react": "^15.4.2",
     "react-codemirror": "^0.3.0",
-    "react-dom": "^15.4.2",
-    "uswds": "^1.0.0"
+    "react-dom": "^15.4.2"
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",
+    "install": "npm-git install",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
@@ -26,5 +28,8 @@
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "gitDependencies": {
+    "public-package-name": "https://github.com/tejans24/caseflow-react#move-styles-to-module"
   }
 }

@@ -1,7 +1,6 @@
-$font-path:   '../node_modules/uswds/src/fonts' !default;
-$image-path:  '../node_modules/uswds/src/img' !default;
+$font-path:   './fonts' !default;
+$image-path:  './img' !default;
 
-@import '../_variables.scss';
 @import '../../node_modules/uswds/src/stylesheets/uswds.scss';
 @import 'fonts';
 
