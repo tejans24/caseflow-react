@@ -17,7 +17,7 @@ COPY . /src/app
 # Build and optimize react app
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE $PORT
 
 # defined in package.json
 CMD [ "npm", "run", "start:server" ]
