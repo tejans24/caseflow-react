@@ -30,6 +30,6 @@
     "eject": "react-scripts eject"
   },
   "gitDependencies": {
-    "public-package-name": "https://github.com/tejans24/caseflow-react#move-styles-to-module"
+    "public-package-name": "https://github.com/tejans24/caseflow-react#master"
   }
 }
