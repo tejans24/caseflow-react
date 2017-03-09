@@ -28,4 +28,36 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](#deployment) for more information.
+
+## Installing dependencies
+
+### Yarn (`brew install yarn`)
+
+`yarn install`
+
+### npm
+
+`npm install`
+
+
+## Running the app
+
+`npm run build` builds all the Javascript and css into the build directory. This content can be severed by a static file server.
+
+### Without Docker
+
+`npm start`
+
+### Using Docker
+
+### Build
+
+The following command builds a docker image using the Dockerfile in the current directory and the name provided using the tag with -t argument.
+
+`docker build -t caseflow-style-guide .`
+
+### Running an image
+
+This command buids the docker container using the port provided.
+
+`docker run -d -p 3000:3000 -e PORT=5000 caseflow-style-guide`
