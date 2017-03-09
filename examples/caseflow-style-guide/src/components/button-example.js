@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 import { Button } from 'caseflow-react';
 
+import { DEFAULT_CODE_MIRROR_OPTIONS } from './util/options';
+
 const ButtonExample = (props) => {
   return(
     <div>

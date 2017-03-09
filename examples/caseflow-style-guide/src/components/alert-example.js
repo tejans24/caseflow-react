@@ -3,14 +3,9 @@ import { Alert, Accordion } from 'caseflow-react';
 import CodeMirror from 'react-codemirror';
 import { AlertCode } from '../data/code';
 
-const AlertExample = (props) => {
-  let options = {
-    theme: 'monokai',
-    mode: {name: "javascript", jsx: true},
-    readOnly: true,
-    //lineNumbers: true
-  };
+import { DEFAULT_CODE_MIRROR_OPTIONS } from './util/options';
 
+const AlertExample = (props) => {
   return(
     <div>
       <h2 id="alerts">Alerts</h2>
@@ -30,7 +25,7 @@ const AlertExample = (props) => {
       <div className="cf-help-divider"></div>
       <Accordion
         title="Code (React/ES6)"
-        content={<CodeMirror value={AlertCode} options={options} />}
+        content={<CodeMirror value={AlertCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
       />
     </div>
   )

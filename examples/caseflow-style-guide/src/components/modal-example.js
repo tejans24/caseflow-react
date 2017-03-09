@@ -3,6 +3,9 @@ import { TextareaField, Button, Modal, Accordion } from 'caseflow-react';
 import CodeMirror from 'react-codemirror';
 import { ModalCode } from '../data/code';
 require('codemirror/mode/javascript/javascript');
+
+import { DEFAULT_CODE_MIRROR_OPTIONS } from './util/options';
+
 import './custom.css'
 
 class ModalExample extends Component {
@@ -22,12 +25,7 @@ class ModalExample extends Component {
 
   render() {
     let styleGuideModal = this.state.modal;
-    let options = {
-      theme: 'monokai',
-      mode: {name: "javascript", jsx: true},
-      readOnly: true,
-      //lineNumbers: true
-    };
+
     return <div>
       <h2 id="modals">Modals</h2>
       <p>Modals are 490 pixels in width with 30px padding around the border and
@@ -70,7 +68,7 @@ class ModalExample extends Component {
 
     <Accordion
       title="Code (React/ES6)"
-      content={<CodeMirror value={ModalCode} options={options} />}
+      content={<CodeMirror value={ModalCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
     />
 
     </div>;
