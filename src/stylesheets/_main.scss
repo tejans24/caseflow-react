@@ -1,0 +1,219 @@
+.cf-logo-image-default {
+  background-image: url(asset-path('caseflow-default-logo.svg'));
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+}
+
+.cf-logo-image-certification {
+  background-image: url(asset-path('caseflow-certification-logo.svg'));
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+}
+
+.cf-logo-image-dispatch {
+  background-image: url(asset-path('caseflow-dispatch-logo.svg'));
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+}
+
+.cf-stats {
+  margin-top: 0;
+
+  .cf-tab-navigation {
+    margin: 0 0 2em;
+  }
+}
+
+.cf-stats-section {
+  &.-activity,
+  &.-certification {
+    .bar { fill: $color-primary-alt; }
+  }
+
+  &.-timing {
+    .bar { fill: $color-green-light; }
+  }
+
+  &.-missing {
+    .bar { fill: $color-secondary; }
+  }
+}
+
+.cf-red-text {
+  color: $color-secondary;
+}
+
+.cf-associated-header {
+  color: $color-gray;
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+.cf-right-side {
+  text-align: right;
+  float: right;
+}
+
+.cf-section-break {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cf-validation {
+  min-height: 12px;
+  color: $color-secondary;
+}
+
+.cf-invisible {
+  display: none;
+}
+
+.cf-adjacent-buttons {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+* + .cf-form-dropdown {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cf-form-textinput[readonly] {
+  background: $color-gray-lightest !important;
+  color: $color-gray-dark;
+  opacity: 1 !important;
+}
+
+.cf-loading-button-text {
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 0;
+  position: relative;
+}
+
+.cf-loading-button-symbol {
+  display: inline-block;
+}
+
+.cf-button-aligned-with-textfield {
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+.cf-button-associated-text {
+  color: $color-gray;
+}
+
+.cf-button-associated-text-right {
+  color: $color-gray;
+  margin-right: 10px;
+  line-height: 35px;
+}
+
+.cf-form-textarea--full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cf-modal-body {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.cf-checklist {
+  list-style-type: none;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  position: relative;
+  max-width: 50%;
+
+  li::before {
+    content: '';
+  }
+
+  .cf-icon-success--bg {
+    font-size: 2.5rem;
+    margin-right: 1.8rem;
+  }
+}
+
+.cf-msg-screen-deck {
+  margin-bottom: 4rem !important;
+}
+
+.cf-tab-window-body {
+  padding-top: 20px;
+  border: 1px solid $color-gray-light;
+  border-top-width: 0;
+
+  &-full-screen {
+    padding: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+    width: auto;
+  }
+}
+
+.cf-tab-navigation-full-screen {
+  margin-left: -30px;
+  margin-right: -30px;
+  width: auto;
+}
+
+@mixin column-count($column, $column-gap) {
+  @include prefixer(column-count, $column, webkit moz spec);
+  @include prefixer(column-gap, $column-gap, webkit moz spec)
+}
+
+.cf-multiple-columns {
+  @include column-count(2, 10re);
+}
+
+select {
+  &[id="decisionType"] {
+    margin-bottom: 30px;
+  }
+}
+
+// TODO: unify this with the styling in caseflow commons once all buttons are using React
+.cf-react-icon-loading-front {
+  @include animation(backwardspin 9s linear infinite);
+}
+
+.cf-react-icon-loading-back {
+  @include animation(spin 9s linear infinite);
+  margin-left: -30px;
+}
+
+.cf-react-loading-indicator {
+  background-color: $color-white;
+  border-radius: 5px;
+  padding: 0.4rem 2.7em;
+  text-align: center;
+  display: inline-block;
+
+  svg { vertical-align: middle; }
+}
+
+.cf-form-radio-options {
+  input {
+    left: -999em;
+  }
+}
+
+.cf-form-checkbox {
+  input {
+    left: -999em;
+  }
+}
+
+.cf-push-left {
+  .cf-btn-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

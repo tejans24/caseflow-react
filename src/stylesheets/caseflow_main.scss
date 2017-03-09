@@ -2,7 +2,8 @@ $font-path:   './fonts' !default;
 $image-path:  './img' !default;
 
 @import '../../node_modules/uswds/src/stylesheets/uswds.scss';
-@import 'fonts';
+@import '_fonts';
+@import '_main';
 
 $cf-background: #f9f9f9;
 $cf-link: #0872b9;
@@ -22,6 +23,10 @@ body {
 .content {
   min-height: calc(100vh - 125px);
   padding-bottom: 30px;
+}
+
+.cf-modal{
+  z-index: 3;
 }
 
 a {
@@ -480,6 +485,7 @@ div {
 .cf-logo-name {
   color: $color-gray;
   font-weight: normal;
+  margin-left: 5px;
 }
 
 .cf-logo-image {
