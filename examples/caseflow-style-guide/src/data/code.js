@@ -1,5 +1,4 @@
 const ModalCode = `
-
   import { TextareaField, Modal } from 'caseflow-react';
 
   class ModalExample extends Component {
