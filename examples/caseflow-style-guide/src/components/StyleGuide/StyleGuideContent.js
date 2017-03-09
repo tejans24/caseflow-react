@@ -24,13 +24,13 @@ const StyleGuideContent = (props) => {
     <div className="cf-push-right cf-sg-content">
       <h1 id="commons">Caseflow React Style Guide</h1>
         <p>
-          Caseflow Commons is home to our most up to date style guide, UI Kit, and code for Caseflow products.
+          This app is home to our most up to date style guide, UI Kit, and react components for Caseflow products.
           The goal is to maintain consistent styling across Caseflow applications and to keep our interface predictable and familiar to the user.
           This unified system also helps us reuse common code across our apps and increase the efficiency of the design process.
         </p>
         <p>
           <a className="usa-button"
-            href="https://github.com/department-of-veterans-affairs/caseflow-commons">
+            href="https://github.com/tejans24/caseflow-react">
             View on Github
           </a>
           <a className="usa-button usa-button-outline"
