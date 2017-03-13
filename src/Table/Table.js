@@ -17,10 +17,13 @@ export default class Table extends React.Component {
     let {
       buildRowValues,
       headers,
-      values
+      values,
+      hasBorder
     } = this.props;
 
-    return <table className="usa-table-borderless" summary="list of tasks">
+    let tableClass = hasBorder ? '' : '-borderless';
+
+    return <table className={`usa-table${tableClass} cf-table${tableClass}`} summary="list of tasks">
       <thead>
         <tr>
           {headers.map((header, i) =>
