@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react';
 import { Alert, Accordion, Table } from 'caseflow-react';
 import CodeMirror from 'react-codemirror';
-import { AlertCode } from '../data/code';
+import { TableCode } from '../data/code';
 
 import { DEFAULT_CODE_MIRROR_OPTIONS } from './util/options';
 
 const TABLE_HEADERS = ['User', 'Date', 'Application', 'Feedback'];
 
-const AlertExample = (props) => {
+const TableExample = (props) => {
   function buildRow(values, index){
     return [
       values.user,
@@ -38,10 +38,10 @@ const AlertExample = (props) => {
       />
       <Accordion
         title="Code (React/ES6)"
-        content={<CodeMirror value={AlertCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
+        content={<CodeMirror value={TableCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
       />
     </div>
   )
 }
 
-export default AlertExample;
+export default TableExample;
