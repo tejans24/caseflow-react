@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react';
-import { Alert, Accordion, Table } from 'caseflow-react';
+import { Table, Accordion } from 'caseflow-react';
 import CodeMirror from 'react-codemirror';
-import { TableCode } from '../data/code';
+import { TableCode } from '../../data/code';
 
-import { DEFAULT_CODE_MIRROR_OPTIONS } from './util/options';
+import { DEFAULT_CODE_MIRROR_OPTIONS } from '../util/options';
 
-const TABLE_HEADERS = ['User', 'Date', 'Application', 'Feedback'];
+const TABLE_ONE_HEADERS = ['User', 'Date', 'Application', 'Feedback'];
 
-const TableExample = (props) => {
+const TableOneExample = (props) => {
   function buildRow(values, index){
     return [
       values.user,
@@ -18,19 +18,17 @@ const TableExample = (props) => {
   }
   return(
     <div>
-      <h2 id="alerts">Tables</h2>
-      <div className="cf-help-divider"></div>
       <Table
-        headers={TABLE_HEADERS}
+        headers={TABLE_ONE_HEADERS}
         buildRowValues={buildRow}
         values={[{
-          user: 'Joe.Snuffy@va.gov',
+          user: <a href="mailto:Joe.Snuffy@va.gov">Joe.Snuffy@va.gov</a>,
           date: '10/24/16',
           application: 'Certification',
           feedback: 'Core competencies drill down cloud strategy re- inventing the wheel we just need to put these last issues to bed, so who’s responsible for the ask for this request?, high-level.'
         },
         {
-          user: 'Abraham.Lincoln@va.gov',
+          user: <a href="mailto:Abraham.Lincoln@va.gov">Abraham.Lincoln@va.gov</a>,
           date: '10/24/16',
           application: 'Certification',
           feedback: 'To be inspired is to become creative, innovative and energized we want this philosophy to trickle down'
@@ -44,4 +42,4 @@ const TableExample = (props) => {
   )
 }
 
-export default TableExample;
+export default TableOneExample;

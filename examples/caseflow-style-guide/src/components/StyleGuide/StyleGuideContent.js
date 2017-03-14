@@ -2,7 +2,7 @@ import React from 'react';
 import ModalExample from '../modal-example';
 import AlertExample from '../alert-example';
 import ButtonExample from '../button-example';
-import TableExample from '../table-example';
+import TableExample from '../TableExamples/table-example';
 
 const StyleGuideContent = (props) => {
   return <div className="cf-app cf-push-row cf-sg-layout cf-app-segment cf-app-segment--alt">
