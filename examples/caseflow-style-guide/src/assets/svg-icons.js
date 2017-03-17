@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 export const SUCCESS_ICON = <svg width="55" height="55" className="cf-icon-found"
 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 50">

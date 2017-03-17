@@ -3,6 +3,7 @@ import ModalExample from '../modal-example';
 import AlertExample from '../alert-example';
 import ButtonExample from '../button-example';
 import TableExample from '../TableExamples/table-example';
+import AccordionExample from '../accordion-example';
 
 const StyleGuideContent = (props) => {
   return <div className="cf-app cf-push-row cf-sg-layout cf-app-segment cf-app-segment--alt">
@@ -19,6 +20,9 @@ const StyleGuideContent = (props) => {
           </li>
           <li>
             <a href="#buttons">Buttons</a>
+          </li>
+          <li>
+            <a href="#tables">Tables</a>
           </li>
         </ul>
     </div>
@@ -46,6 +50,8 @@ const StyleGuideContent = (props) => {
         <ButtonExample />
         <div className="cf-help-divider" />
         <TableExample />
+        <div className="cf-help-divider" />
+        <AccordionExample />
     </div>
   </div>
 }

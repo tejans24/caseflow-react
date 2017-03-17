@@ -204,10 +204,49 @@ const TableTwoCode = `
   export default TableTwoExample;
 `;
 
+const AccordionCode = `
+  import React, { PropTypes } from 'react';
+  import { Accordion } from 'caseflow-react';
+
+  const AccordionExample = (props) => {
+    const accordionOneContent = "We the People of the United States, in Order to form a \
+    more perfect Union, establish Justice, insure domestic Tranquility, provide for the \
+    common defence, promote the general Welfare, and secure the Blessings of Liberty to \
+    ourselves and our Posterity, do ordain and establish this Constitution for the United \
+    States of America.";
+
+    const accordionTwoContent = "This is the content in the 2nd accordion";
+    const accordionThreeContent = "This is the content in the 3rd accordion";
+
+    return(
+      <div>
+        <h2 id="accordions">Accordions</h2>
+        <div>
+          <Accordion
+            title="Example title 1"
+            content={accordionOneContent}
+          />
+          <Accordion
+            title="Example title 2"
+            content={accordionTwoContent}
+          />
+          <Accordion
+            title="Example title 3"
+            content={accordionThreeContent}
+          />
+        </div>
+      </div>
+    )
+  }
+
+  export default AccordionExample;
+`;
+
 
 export {
   ModalCode,
   AlertCode,
   TableCode,
-  TableTwoCode
+  TableTwoCode,
+  AccordionCode
 };

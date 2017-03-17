@@ -34,10 +34,11 @@ const TableOneExample = (props) => {
           feedback: 'To be inspired is to become creative, innovative and energized we want this philosophy to trickle down'
         }]}
       />
-      <Accordion
+      {/*<Accordion
         title="Code (React/ES6)"
+        contentClass="code-mirror-accordion-content"
         content={<CodeMirror value={TableCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
-      />
+      />*/}
     </div>
   )
 }

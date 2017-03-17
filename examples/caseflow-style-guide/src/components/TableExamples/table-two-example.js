@@ -67,10 +67,11 @@ const TableTwoExample = (props) => {
           status: 'alerted'
         }]}
       />
-      <Accordion
+      {/*<Accordion
         title="Code (React/ES6)"
+        contentClass="code-mirror-accordion-content"
         content={<CodeMirror value={TableTwoCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
-      />
+      />*/}
     </div>
   )
 }

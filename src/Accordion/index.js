@@ -1,3 +1,7 @@
 import Accordion from './Accordion';
+import AccordionContent from './AccordionContent';
 
-export default Accordion;
+export {
+  Accordion,
+  AccordionContent
+};

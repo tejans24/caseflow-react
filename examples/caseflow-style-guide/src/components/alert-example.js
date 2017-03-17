@@ -23,10 +23,11 @@ const AlertExample = (props) => {
         aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
         voluptatem sequi nesciunt."/>
       <div className="cf-help-divider"></div>
-      <Accordion
+      {/*<Accordion
         title="Code (React/ES6)"
+        contentClass="code-mirror-accordion-content"
         content={<CodeMirror value={AlertCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
-      />
+      />*/}
     </div>
   )
 }

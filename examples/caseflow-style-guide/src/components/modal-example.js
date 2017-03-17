@@ -66,10 +66,11 @@ class ModalExample extends Component {
       </Modal>
     }
 
-    <Accordion
+    {/*<Accordion
       title="Code (React/ES6)"
+      contentClass="code-mirror-accordion-content"
       content={<CodeMirror value={ModalCode} options={DEFAULT_CODE_MIRROR_OPTIONS} />}
-    />
+    />*/}
 
     </div>;
   }
