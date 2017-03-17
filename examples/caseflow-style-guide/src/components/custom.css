@@ -1,7 +1,10 @@
 .usa-accordion-content {
   padding: 0px;
-  font-size: 1.4rem;
-}
+  font-size: 1.4rem; }
 
-.CodeMirror { height: 100%; width: 112%; }
-.ReactCodeMirror { width: 112%; }
+.CodeMirror {
+  height: 100%;
+  width: 112%; }
+
+.ReactCodeMirror {
+  width: 112%; }
