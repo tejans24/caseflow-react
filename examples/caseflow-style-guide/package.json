@@ -15,7 +15,7 @@
   "dependencies": {
     "bourbon": "^4.3.3",
     "install": "^0.8.7",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "npm-git": "^0.1.29",
     "react": "^15.4.2",
     "react-codemirror": "^0.3.0",
